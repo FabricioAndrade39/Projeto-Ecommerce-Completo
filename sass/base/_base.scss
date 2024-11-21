@@ -1,52 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
+@use '../abstracts';
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  @include respond(big) {
-    font-size: 56.75%;
+/**
+ * Basic styles for links
+ */
+a {
+  color: abstracts.$brand-color;
+  text-decoration: none;
+
+  @include abstracts.on-event {
+    color: abstracts.$text-color;
+    text-decoration: underline;
   }
-}
-
-body {
-  font-family: Inter, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  color: $cor-preta;
-  background-color: $cor-branca;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-}
-
-.principal {
-  @include flex($direction: column, $gap: 2.5rem);
-
-  @include respond(medium) {
-    gap: 1.6rem;
-  }
-}
-
-/* Largura da barra de rolagem */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: transparent;
-}
-
-/* A barra de rolagem propriamente dita */
-::-webkit-scrollbar-thumb {
-  background: #bdbdbd;
-  border-radius: 10px;
 }
