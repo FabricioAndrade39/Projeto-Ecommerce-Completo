@@ -1,9 +1,21 @@
-@use '../abstracts';
-
 /**
  * Basic typography style for copy text
  */
+
 body {
-  color: abstracts.$text-color;
-  font: normal 125% / 1.4 abstracts.$text-font-stack;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
 }

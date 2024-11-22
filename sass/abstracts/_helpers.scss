@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Esse arquivo contém variables, functions, mixins e includes
+// -----------------------------------------------------------------------------
+
+//Variaveis
+
+$color-black: #000;
+$color-white: #fff;
+
+//Mixins
+
+@mixin flex(
+  $direction: row,
+  $wrap: nowrap,
+  $align: stretch,
+  $justify: start,
+  $gap: 0
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
