@@ -35,3 +35,7 @@ ul,
 li {
   list-style: none;
 }
+
+.principal {
+  @include flex($direction: column, $gap: 2.5rem);
+}

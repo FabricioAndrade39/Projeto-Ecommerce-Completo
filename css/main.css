@@ -32,6 +32,14 @@ li {
   list-style: none;
 }
 
+.principal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 2.5rem;
+}
+
 .cabecalho {
   position: sticky;
   top: 0;
@@ -333,6 +341,13 @@ li {
 .carrossel__preenchimento--completo {
   width: 100%;
   transition: width ease-out 5s;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
