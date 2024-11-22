@@ -11,3 +11,27 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: $cor-preta;
+  background-color: $cor-branca;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}

@@ -4,13 +4,13 @@
 @import 'abstracts/helpers';
 
 // 3. Base stuff
-@import 'base/base', 'base/typography';
+@import 'base/base';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button', 'components/header.scss';
+//@import 'components/button';
 
 // 6. Page-specific styles
 @import 'pages/home';
