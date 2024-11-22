@@ -289,4 +289,50 @@ li {
   text-transform: uppercase;
 }
 
+.carrossel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1694/573.5;
+  overflow: hidden;
+}
+.carrossel__imagens {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 0;
+}
+.carrossel__item {
+  min-width: 100%;
+  height: 100%;
+}
+.carrossel__botoes {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 0.82rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -2rem);
+  z-index: 1;
+}
+.carrossel__botao {
+  background-color: rgba(167, 167, 167, 0.5);
+  width: 12.5rem;
+  height: 0.2rem;
+  border-radius: 5rem;
+}
+.carrossel__preenchimento {
+  width: 1.5%;
+  height: 100%;
+  background-color: #fff;
+  transition: none;
+}
+.carrossel__preenchimento--completo {
+  width: 100%;
+  transition: width ease-out 5s;
+}
+
 /*# sourceMappingURL=main.css.map */
