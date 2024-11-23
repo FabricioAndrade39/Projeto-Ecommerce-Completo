@@ -4,13 +4,36 @@
   aspect-ratio: 1694/573.5;
   overflow: hidden;
 
+  @include respond(medium) {
+    aspect-ratio: 1024/1280;
+  }
+
   &__imagens {
     @include flex();
+    transition: transform ease 500ms;
   }
 
   &__item {
     min-width: 100%;
     height: 100%;
+
+    & a {
+      & img {
+        &:last-child {
+          display: none;
+        }
+
+        @include respond(medium) {
+          &:first-child {
+            display: none;
+          }
+
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+    }
   }
 
   &__botoes {

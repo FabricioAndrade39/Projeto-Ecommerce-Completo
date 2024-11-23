@@ -2,6 +2,10 @@
   @include flex($gap: 1.02rem);
   width: 100%;
 
+  @include respond(medium) {
+    flex-direction: column;
+  }
+
   &__input {
     font-family: inherit;
     padding: 1rem;

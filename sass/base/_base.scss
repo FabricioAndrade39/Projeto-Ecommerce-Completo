@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
   color: $cor-preta;
@@ -30,16 +26,43 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
 .principal {
   @include flex($direction: column, $gap: 2.5rem);
+
+  @include respond(medium) {
+    gap: 1.6rem;
+  }
+
+  &--padding-b {
+    padding-bottom: 7.63rem;
+
+    @include respond(small) {
+      padding-bottom: 3.12rem;
+    }
+  }
+
+  &--gap {
+    gap: 7.63rem;
+
+    @include respond(small) {
+      gap: 3.12rem;
+    }
+  }
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* A barra de rolagem propriamente dita */
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
 }

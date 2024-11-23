@@ -1,28 +1,27 @@
-// Script para o carrossel da home
-
-var elemensCarrosselBotao = document.querySelectorAll('.carrossel__botao');
-var elemenCarrosselImagens = document.querySelector('.carrossel__imagens');
+// Script para o Carrossel da Home
+var elemsCarrosselBotao = document.querySelectorAll('.carrossel__botao');
+var elemCarrosselImagens = document.querySelector('.carrossel__imagens');
 
 function rodarCarrossel(i) {
   var itemAnt = i - 1;
 
   if (i == 0) {
-    itemAnt = elemensCarrosselBotao.length - 1;
+    itemAnt = elemsCarrosselBotao.length - 1;
   }
 
-  elemensCarrosselBotao[itemAnt]
+  elemsCarrosselBotao[itemAnt]
     .querySelector('div')
     .classList.remove('carrossel__preenchimento--completo');
 
-  elemenCarrosselImagens.style.transform = `translateX(-${i * 100}%)`;
+  elemCarrosselImagens.style = 'transform: translateX(-' + i * 100 + '%)';
 
-  elemensCarrosselBotao[i]
+  elemsCarrosselBotao[i]
     .querySelector('div')
     .classList.add('carrossel__preenchimento--completo');
 
   var proxItem = i + 1;
 
-  if (i == elemensCarrosselBotao.length - 1) {
+  if (i == elemsCarrosselBotao.length - 1) {
     proxItem = 0;
   }
 

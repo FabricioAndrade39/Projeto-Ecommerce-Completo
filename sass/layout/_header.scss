@@ -17,6 +17,12 @@
       display: none;
     }
 
+    .cabecalho__container {
+      @include respond(medium) {
+        margin: auto;
+      }
+    }
+
     .cabecalho__logo {
       margin: 3.05rem 0;
 
@@ -60,6 +66,10 @@
     width: 2.2rem;
     cursor: pointer;
 
+    @include respond(medium) {
+      display: block;
+    }
+
     &-x {
       display: none;
       font-weight: 500;
@@ -72,12 +82,34 @@
     min-width: 15rem;
     width: 15rem;
     margin-bottom: 2px;
+
+    @include respond(medium) {
+      margin: 3.05rem 0;
+    }
   }
 
   &__navegacao {
     @include flex($gap: 4.88rem);
     width: 100%;
     max-width: 81rem;
+
+    @include respond(medium) {
+      // display: flex;
+      transition: transform 0.5s ease-in-out;
+      left: 0;
+      top: 100%;
+      background-color: $cor-branca;
+      min-width: 100%;
+      height: 100vh;
+      max-height: calc(100vh - 75px);
+      overflow-y: scroll;
+      transform: translateX(-170%);
+      position: absolute;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   &__lista {
@@ -88,6 +120,30 @@
     &--tipo {
       @include flex($direction: column, $gap: 0.42rem);
       width: auto;
+
+      @include respond(medium) {
+        margin: 0 2rem 0 4rem;
+
+        &:nth-child(2) {
+          margin-top: 2rem;
+        }
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    @include respond(medium) {
+      flex-direction: column;
+      gap: 0;
+      justify-content: start;
+
+      &--tipo li {
+        &:last-child a {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
@@ -99,6 +155,29 @@
     font-weight: 700;
     line-height: 1;
     border-bottom: solid 2px transparent;
+
+    @include respond(medium) {
+      @include flex($align: center, $justify: space-between);
+      border-width: 0;
+      margin: 0 2rem 2rem 2rem;
+
+      &::after {
+        content: '\276F';
+        transform: rotate(90deg);
+      }
+
+      &--tipo {
+        margin-left: 0;
+
+        &::after {
+          content: '';
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
 
     &-icone {
       @include flex($align: center, $justify: center);
@@ -130,6 +209,14 @@
       text-transform: none;
       font-weight: 400;
       border-bottom: none;
+
+      @include respond(medium) {
+        margin: 0;
+
+        &::after {
+          content: '';
+        }
+      }
     }
 
     &--tipo {
@@ -159,6 +246,33 @@
         display: flex;
       }
     }
+
+    @include respond(medium) {
+      border-top: 1px solid $cor-cinza-muito-claro;
+      padding: 2rem 0 0 0;
+      cursor: pointer;
+
+      // &:hover {
+      //   & .cabecalho__expansao-tipos {
+      //     display: none;
+      //   }
+      // }
+
+      &--aberto {
+        & .cabecalho__expansao-tipos {
+          // display: flex;
+          max-height: 100rem;
+          border-top: 1px solid $cor-cinza-muito-claro;
+          transition: max-height 0.3s ease-in-out;
+        }
+
+        // &:hover {
+        //   & .cabecalho__expansao-tipos {
+        //     display: flex;
+        //   }
+        // }
+      }
+    }
   }
 
   &__expansao-tipos {
@@ -171,6 +285,18 @@
     top: 100%;
     padding: 3.12rem 4.88rem;
     box-shadow: 0 0 0.2rem rgba($color: $cor-preta, $alpha: 0.1);
+
+    @include respond(medium) {
+      display: flex;
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      position: static;
+      background-color: $cor-off-white;
+      flex-direction: column;
+      gap: 2rem;
+      transition: max-height 0.3s ease-in-out;
+    }
   }
 
   &__imagem {
@@ -187,8 +313,17 @@
     width: 2rem;
     height: 2rem;
 
+    @include respond(big) {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
     &--menor {
       width: 1.6rem;
+
+      @include respond(big) {
+        width: 1.78rem;
+      }
     }
 
     &--logado {
