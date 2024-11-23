@@ -10,6 +10,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(big) {
+    font-size: 56.75%;
+  }
 }
 
 body {

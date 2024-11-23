@@ -7,6 +7,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 80em) {
+  html {
+    font-size: 56.75%;
+  }
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -52,6 +57,11 @@ li {
   background-color: #fff;
   z-index: 999;
 }
+@media (max-width: 59.375em) {
+  .cabecalho {
+    padding: 0 3.12rem;
+  }
+}
 .cabecalho--carrinho .cabecalho__navegacao,
 .cabecalho--carrinho .cabecalho__icones,
 .cabecalho--carrinho .cabecalho__menu {
@@ -82,6 +92,11 @@ li {
   justify-content: start;
   gap: 3.66vw;
   width: 100%;
+}
+@media (max-width: 59.375em) {
+  .cabecalho__container {
+    width: auto;
+  }
 }
 .cabecalho__menu {
   display: none;
@@ -351,30 +366,6 @@ li {
   font-family: serif;
   text-wrap: nowrap;
 }
-.rodape .formulario {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: start;
-  gap: 1.02rem;
-  width: 100%;
-}
-.rodape .formulario__input {
-  font-family: inherit;
-  padding: 1rem;
-  border-radius: 0.8rem;
-  border: 1px solid #b0b0b0;
-  width: 100%;
-}
-.rodape .formulario__botao {
-  padding: 1.4rem 3rem;
-  background-color: #1b1b1b;
-  color: #fff;
-  border-radius: 0.8rem;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-}
 .rodape__container-app {
   display: flex;
   flex-flow: column nowrap;
@@ -616,6 +607,31 @@ li {
 .carrossel__preenchimento--completo {
   width: 100%;
   transition: width ease-out 5s;
+}
+
+.formulario {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1.02rem;
+  width: 100%;
+}
+.formulario__input {
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #b0b0b0;
+  width: 100%;
+}
+.formulario__botao {
+  padding: 1.4rem 3rem;
+  background-color: #1b1b1b;
+  color: #fff;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .banner-grid {

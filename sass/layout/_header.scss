@@ -6,6 +6,10 @@
   background-color: $cor-branca;
   z-index: 999;
 
+  @include respond(medium) {
+    padding: 0 3.12rem;
+  }
+
   &--carrinho {
     .cabecalho__navegacao,
     .cabecalho__icones,
@@ -45,6 +49,10 @@
   &__container {
     @include flex($align: center, $gap: 3.66vw, $justify: start);
     width: 100%;
+
+    @include respond(medium) {
+      width: auto;
+    }
   }
 
   &__menu {
