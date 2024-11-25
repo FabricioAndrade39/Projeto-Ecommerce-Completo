@@ -52,3 +52,25 @@ $cor-verde: #38ab6b;
     }
   }
 }
+
+// Placeholder
+
+%botao-verde {
+  margin-top: 1.28rem;
+  width: 100%;
+  background-color: $cor-verde;
+  border-radius: 8px;
+  color: $cor-branca;
+  font-size: inherit;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.6rem 0;
+  cursor: pointer;
+  transition: background-color ease-in 0.15s;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: darken($cor-verde, 10%);
+  }
+}
