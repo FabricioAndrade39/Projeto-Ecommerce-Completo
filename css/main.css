@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.s-produto__adicicionar {
+.subtotal__botao, .s-produto__adicicionar {
   margin-top: 1.28rem;
   width: 100%;
   background-color: #38ab6b;
@@ -14,7 +14,7 @@
   text-decoration: none;
   text-align: center;
 }
-.s-produto__adicicionar:hover {
+.subtotal__botao:hover, .s-produto__adicicionar:hover {
   background-color: rgb(43.4185022026, 132.5814977974, 82.9603524229);
 }
 
@@ -1783,6 +1783,122 @@ img {
   .similares__container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.carrinho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  justify-content: start;
+  gap: 3.9rem;
+  padding: 9.54rem 3.12rem;
+  background-color: #f0f0f0;
+}
+
+.sacola {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 3.9rem;
+  padding: 3.9rem;
+  background-color: #fff;
+  flex: 1;
+}
+.sacola__titulo {
+  font-family: serif;
+  font-size: 2.76rem;
+}
+.sacola__realce-verde {
+  color: #38ab6b;
+}
+.sacola__titulos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.tabela th {
+  border-bottom: solid 1px #f0f0f0;
+  padding-bottom: 2rem;
+}
+.tabela th:first-child {
+  text-align: left;
+}
+.tabela tr td {
+  padding: 2rem 0;
+}
+.tabela tr:not(:last-child) td {
+  border-bottom: solid 1px #f0f0f0;
+}
+.tabela .tabela__qtd, .tabela .tabela__preco-unit {
+  padding-bottom: 2rem;
+}
+.tabela__preco {
+  text-align: center;
+}
+.tabela__quantidade {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.tabela__quantidade button {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: solid 1px #000;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+.tabela__imagem {
+  max-width: 7rem;
+}
+.tabela__produto {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1rem;
+  font-size: 1.33rem;
+}
+.tabela__produto-textos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 0.6rem;
+}
+
+.subtotal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 0;
+  padding: 3.9rem;
+  background-color: #fff;
+  max-width: 47rem;
+  width: 36.7vw;
+}
+.subtotal__infos {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 2rem 0;
+  border-bottom: solid 1px #f0f0f0;
+}
+.subtotal__infos--sborda {
+  border-bottom: none;
+}
+.subtotal__botao {
+  border-radius: 0;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
