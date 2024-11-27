@@ -153,8 +153,19 @@
     &-quadrado {
       width: 2.8rem;
       height: 2.8rem;
-      background-color: blue;
       border-radius: 4px;
+    }
+
+    $cores: blue, black, white, #f8f4f4, yellow, pink, red, orange, green, brown;
+
+    @for $i from 1 through length($cores) {
+      &-quadrado-#{$i} {
+        background-color: nth($cores, $i);
+
+        @if nth($cores, $i) == white or nth($cores, $i) == #f8f4f4 {
+          border: 1px solid $cor-cinza-muito-claro;
+        }
+      }
     }
   }
 

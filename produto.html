@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja Reserva</title>
+
     <link rel="stylesheet" href="css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +15,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="cabecalho">
       <div class="cabecalho__menu">
@@ -664,702 +666,204 @@
       </div>
     </header>
 
-    <main class="principal principal--padding-b">
-      <section class="loja">
-        <div class="menu">
-          <div class="menu__cabecalho">
-            <div class="menu__titulos">
-              <div>
-                <img
-                  src="Imagens/filter-big-1-svgrepo-com.svg"
-                  alt="Logo do Filtro de Preços"
-                  class="menu__icone"
-                />
-              </div>
-              <p class="menu__titulo">Filtrar</p>
+    <main class="principal principal--padding-b principal--gap">
+      <section class="s-produto">
+        <div class="s-produto__carrossel">
+          <div class="s-produto__carrossel-itens">
+            <div class="s-produto__carrossel-img">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/7360641-1200-auto?v=638096115881470000&width=1200&height=auto&aspect=true"
+                alt="Imagem Carrossel 1"
+              />
             </div>
-            <p class="menu__fechar-filtro">X</p>
-          </div>
-
-          <div class="menu__preco">
-            <p class="menu__subtitulo">Faixa de Preço</p>
-
-            <div class="range_container">
-              <div class="sliders_control">
-                <input
-                  id="fromSlider"
-                  type="range"
-                  value="0"
-                  min="0"
-                  max="1000"
-                />
-                <input
-                  id="toSlider"
-                  type="range"
-                  value="1000"
-                  min="0"
-                  max="1000"
-                />
-              </div>
-
-              <div class="menu__controles">
-                <div class="form_control">
-                  <div class="form_control_container">
-                    <input
-                      class="form_control_container__time__input"
-                      type="number"
-                      id="fromInput"
-                      value="0"
-                      min="0"
-                      max="1000"
-                    />
-                  </div>
-                  <p>até</p>
-                  <div class="form_control_container">
-                    <input
-                      class="form_control_container__time__input"
-                      type="number"
-                      id="toInput"
-                      value="1000"
-                      min="0"
-                      max="1000"
-                    />
-                  </div>
-                </div>
-
-                <button class="menu__botao">Filtrar</button>
-              </div>
+            <div class="s-produto__carrossel-img">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/7360660-1200-auto?v=638096115883330000&width=1200&height=auto&aspect=true"
+                alt="Imagem Carrossel 2"
+              />
+            </div>
+            <div class="s-produto__carrossel-img">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/7360662-1200-auto?v=638096115883330000&width=1200&height=auto&aspect=true"
+                alt="Imagem Carrossel 3"
+              />
+            </div>
+            <div class="s-produto__carrossel-img">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/7360676-1200-auto?v=638096115883970000&width=1200&height=auto&aspect=true"
+                alt="Imagem Carrossel 4"
+              />
+            </div>
+            <div class="s-produto__carrossel-img">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/7360689-1200-auto?v=638096115884900000&width=1200&height=auto&aspect=true"
+                alt="Imagem Carrossel 5"
+              />
             </div>
           </div>
 
-          <div class="menu__expansivel">
-            <div class="menu__expansivel-cabecalho">
-              <p class="menu__subtitulo">Cor</p>
-            </div>
-            <div class="menu__expansivel-conteudo">
-              <div class="menu__cores">
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-1"></div>
-                  <div class="menu__cor-texto">Azul</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-2"></div>
-                  <div class="menu__cor-texto">Preto</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-3"></div>
-                  <div class="menu__cor-texto">Branco</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-4"></div>
-                  <div class="menu__cor-texto">Off-White</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-5"></div>
-                  <div class="menu__cor-texto">Amarelo</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-6"></div>
-                  <div class="menu__cor-texto">Rosa</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-7"></div>
-                  <div class="menu__cor-texto">Vermelho</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-8"></div>
-                  <div class="menu__cor-texto">Laranja</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-9"></div>
-                  <div class="menu__cor-texto">Verde</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-
-                <div class="menu__cor">
-                  <div class="menu__cor-quadrado menu__cor-quadrado-10"></div>
-                  <div class="menu__cor-texto">Marrom</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="azul"
-                    value="azul"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu__expansivel">
+          <div class="s-produto__carrossel-botoes">
             <div
-              class="menu__expansivel-cabecalho menu__expansivel-cabecalho--aberto"
-            >
-              <p class="menu__subtitulo">Tamanho</p>
-            </div>
-            <div class="menu__expansivel-conteudo">
-              <div class="menu__tamanhos">
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">36</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="36"
-                    id="36"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">38</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="38"
-                    id="38"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">40</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="40"
-                    id="40"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">42</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="42"
-                    id="42"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">44</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="44"
-                    id="44"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">46</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="46"
-                    id="46"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">48</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="48"
-                    id="48"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">PP</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="pp"
-                    id="pp"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">P</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="p"
-                    id="p"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">M</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="m"
-                    id="m"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">G</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="g"
-                    id="g"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">GG</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="gg"
-                    id="gg"
-                  />
-                </div>
-
-                <div class="menu__tamanho">
-                  <div class="menu__tamanho-quadrado">XG</div>
-
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="xg"
-                    id="xg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu__expansivel">
-            <div
-              class="menu__expansivel-cabecalho menu__expansivel-cabecalho--aberto"
-            >
-              <p class="menu__subtitulo">Categoria</p>
-            </div>
-            <div class="menu__expansivel-conteudo">
-              <div class="menu__categorias">
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Camisas</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="camisas"
-                    id="camisas"
-                  />
-                </div>
-
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Camisetas</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="camisetas"
-                    id="camisetas"
-                  />
-                </div>
-
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Calças</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="calcas"
-                    id="calcas"
-                  />
-                </div>
-
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Vestidos</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="vestidos"
-                    id="vestidos"
-                  />
-                </div>
-
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Casacos e Jaquetas</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="casacos e jaquetas"
-                    id="casacos e jaquetas"
-                  />
-                </div>
-
-                <div class="menu__categoria">
-                  <div class="menu__categoria-quadrado"></div>
-                  <div class="menu__categoria-texto">Calçados</div>
-                  <input
-                    class="menu__checkbox"
-                    type="checkbox"
-                    name="calcados"
-                    id="calcados"
-                  />
-                </div>
-              </div>
-            </div>
+              class="s-produto__carrossel-botao s-produto__carrossel-botao--selecionado"
+            ></div>
+            <div class="s-produto__carrossel-botao"></div>
+            <div class="s-produto__carrossel-botao"></div>
+            <div class="s-produto__carrossel-botao"></div>
+            <div class="s-produto__carrossel-botao"></div>
           </div>
         </div>
 
-        <div class="produtos">
-          <div class="produtos__cabecalho">
-            <button class="produtos__cabecalho-filtrar">Filtrar</button>
-            <div class="produtos__cabecalho-ordenarpor">
-              <div class="produtos__cabecalho-imgicone">
-                <img
-                  class="produtos__cabecalho-icone"
-                  src="Imagens/sort-vertical-svgrepo-com.svg"
-                  alt=""
-                />
+        <div class="s-produto__informacoes">
+          <div class="s-produto__breadcrumbs">
+            <span><a href="">Home</a></span>
+            <span><a href="">Feminino</a></span>
+            <span><a href="">Camisetas</a></span>
+            <span>
+              <p>Camiseta Reserva Transborde</p>
+            </span>
+          </div>
+
+          <div class="s-produto__infos">
+            <h1 class="s-produto__titulo">Camiseta Reversa Transborde</h1>
+
+            <p class="s-produto__preco">R$ 349<sup>,00</sup></p>
+
+            <div class="s-produto__cor">
+              <p class="s-produto__cor-nome">Cor: <span>Preto</span></p>
+              <div class="s-produto__cores">
+                <div
+                  class="s-produto__cores-item s-produto__cores-item--selecionado"
+                ></div>
+                <div
+                  class="s-produto__cores-item"
+                  style="background-color: black"
+                ></div>
+                <div
+                  class="s-produto__cores-item"
+                  style="background-color: green"
+                ></div>
               </div>
-              <p class="produtos__subtitulo">Ordenar por:</p>
-              <select class="produtos__select">
-                <option value="maior-preco">Maior preço</option>
-                <option value="menor-preco">Menor preço</option>
-              </select>
             </div>
 
-            <p class="produtos__cabecalho-textoitens">
-              Mostrando
-              <span class="produtos__cabecalho-itens">24 de 104 itens</span>
-            </p>
+            <div class="s-produto__tamanho">
+              <p class="s-produto__tamanho-nome">Tamanho: <span>GG</span></p>
+              <div class="s-produto__tamanhos">
+                <div
+                  class="s-produto__tamanhos-item s-produto__tamanhos-item--selecionado"
+                >
+                  PP
+                </div>
+                <div class="s-produto__tamanhos-item">P</div>
+                <div class="s-produto__tamanhos-item">M</div>
+                <div class="s-produto__tamanhos-item">G</div>
+                <div class="s-produto__tamanhos-item">GG</div>
+              </div>
+            </div>
           </div>
 
-          <div class="produtos__grade">
-            <a
-              class="produto"
-              href="https://www.usereserva.com/camiseta-silk-folhagem0078068/p?skuId=499434"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8404940-2400-auto?v=638358284054500000&width=2400&height=auto&aspect=true"
-                  alt="Imagem do Produto"
-                />
+          <button class="s-produto__adicicionar">Adicionar à sacola</button>
 
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/vestido-jersey-alca-corrente0087868/p?skuId=538571"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8687320-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/vestido-chemisie-estampa-yes-brazil0091468/p?skuId=556998"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8870261-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/polo-piquet-class-rsv0088347/p?skuId=544385"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8764272-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/camiseta-jazz-denim0065586/p?skuId=408828"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8949078-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/jaqueta-casual-sarja0071049/p?skuId=442051"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/7651456-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/tenis-rsv-over-clean0095986/p?skuId=540315"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8884594-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/tenis-rsv-yankee-max0086632/p?skuId=536073"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8852057-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="produto"
-              href="https://www.usereserva.com/tenis-rsv-onix0095313/p?skuId=540318"
-            >
-              <div class="produto__imagem">
-                <img
-                  src="https://lojausereserva.vtexassets.com/arquivos/ids/8692210-400-600?width=400&height=600&aspect=true"
-                  alt="Imagem do Produto"
-                />
-
-                <form
-                  class="produto__botao"
-                  action="{% url 'adicionar_carrinho' produto.id %}"
-                  method="post"
-                >
-                  <button>Adicionar ao carrinho</button>
-                </form>
-              </div>
-
-              <div class="produto__textos">
-                <p class="produto__titulo">Camiseta Silk Folhagem</p>
-                <div class="produto__preco">
-                  <p class="produto__avista">R$ 349 <sup>,00</sup></p>
-                  <p class="produto__parcelado">5x R$ 69 <sup>,80</sup></p>
-                </div>
-              </div>
-            </a>
+          <div class="s-produto__descricao">
+            <p class="s-produto__descricao-titulo">Descrição do produto</p>
+            <div class="s-produto__descricao-textos">
+              <p>
+                Básicos indispensáveis! A camiseta de algodão cropped é perfeita
+                para usar com calças e saias de cintura alta.
+              </p>
+              <p>
+                COMPOSIÇÃO <br />
+                96% Viscose 4% Elastano
+              </p>
+              <p>
+                CÓDIGO DO PRODUTO <br />
+                Ref: <span>0078397051</span>
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="similares">
+        <h2 class="similares__titulo">
+          Gostou desse produto? Veja itens similares
+        </h2>
+
+        <div class="similares__container">
+          <a
+            href="https://www.usereserva.com/camiseta-silk-folhagem0078068/p?skuId=499434"
+            class="produto"
+          >
+            <div class="produto__imagem">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/8404940-2400-auto?v=638358284054500000&width=2400&height=auto&aspect=true"
+                alt="Imagem do Produto"
+              />
+            </div>
+            <div class="produto__textos">
+              <p class="produto__titulo">Camiseta Silk Folhagem</p>
+              <div class="produto__preco">
+                <p class="produto__avista">R$ 349<sup>,00</sup></p>
+                <p class="produto__parcelado">5x R$ 69<sup>,80</sup></p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.usereserva.com/camiseta-silk-folhagem0078068/p?skuId=499434"
+            class="produto"
+          >
+            <div class="produto__imagem">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/8404940-2400-auto?v=638358284054500000&width=2400&height=auto&aspect=true"
+                alt="Imagem do Produto"
+              />
+            </div>
+            <div class="produto__textos">
+              <p class="produto__titulo">Camiseta Silk Folhagem</p>
+              <div class="produto__preco">
+                <p class="produto__avista">R$ 349<sup>,00</sup></p>
+                <p class="produto__parcelado">5x R$ 69<sup>,80</sup></p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.usereserva.com/camiseta-silk-folhagem0078068/p?skuId=499434"
+            class="produto"
+          >
+            <div class="produto__imagem">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/8404940-2400-auto?v=638358284054500000&width=2400&height=auto&aspect=true"
+                alt="Imagem do Produto"
+              />
+            </div>
+            <div class="produto__textos">
+              <p class="produto__titulo">Camiseta Silk Folhagem</p>
+              <div class="produto__preco">
+                <p class="produto__avista">R$ 349<sup>,00</sup></p>
+                <p class="produto__parcelado">5x R$ 69<sup>,80</sup></p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.usereserva.com/camiseta-silk-folhagem0078068/p?skuId=499434"
+            class="produto"
+          >
+            <div class="produto__imagem">
+              <img
+                src="https://lojausereserva.vtexassets.com/arquivos/ids/8404940-2400-auto?v=638358284054500000&width=2400&height=auto&aspect=true"
+                alt="Imagem do Produto"
+              />
+            </div>
+            <div class="produto__textos">
+              <p class="produto__titulo">Camiseta Silk Folhagem</p>
+              <div class="produto__preco">
+                <p class="produto__avista">R$ 349<sup>,00</sup></p>
+                <p class="produto__parcelado">5x R$ 69<sup>,80</sup></p>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
     </main>
@@ -1778,7 +1282,6 @@
     </footer>
 
     <script src="js/scripts.js"></script>
-    <script src="js/loja.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/produto.js"></script>
   </body>
 </html>
