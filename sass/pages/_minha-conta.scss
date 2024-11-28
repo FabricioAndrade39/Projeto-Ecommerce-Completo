@@ -3,6 +3,14 @@
   padding: 9.54rem 3.12rem;
   background-color: $cor-off-white-2;
 
+  @include respond(medium) {
+    padding: 6.1rem 3.12rem;
+  }
+
+  @include respond(small) {
+    padding: 3.12rem;
+  }
+
   &__container {
     @include flex($direction: column, $align: start, $gap: 2.5rem);
     padding: 3.9rem;
@@ -10,6 +18,11 @@
     width: 80%;
     max-width: 100%;
     margin: auto;
+
+    @include respond(small) {
+      width: 100%;
+      padding: 3.12rem;
+    }
   }
 
   &__form {
@@ -18,11 +31,19 @@
     border-radius: 8px;
     background-color: $cor-off-white;
     width: 100%;
+
+    @include respond(small) {
+      padding: 2.5rem;
+    }
   }
 
   &__item {
     position: relative;
     width: calc(50% - 0.8rem);
+
+    @include respond(small) {
+      width: 100%;
+    }
 
     &--email {
       width: 100%;

@@ -2182,6 +2182,16 @@ img {
   padding: 9.54rem 3.12rem;
   background-color: #f0f0f0;
 }
+@media (max-width: 59.375em) {
+  .conta {
+    padding: 6.1rem 3.12rem;
+  }
+}
+@media (max-width: 30em) {
+  .conta {
+    padding: 3.12rem;
+  }
+}
 .conta__container {
   display: flex;
   flex-flow: column nowrap;
@@ -2194,6 +2204,12 @@ img {
   max-width: 100%;
   margin: auto;
 }
+@media (max-width: 30em) {
+  .conta__container {
+    width: 100%;
+    padding: 3.12rem;
+  }
+}
 .conta__form {
   display: flex;
   flex-flow: row wrap;
@@ -2205,9 +2221,19 @@ img {
   background-color: #f9f9f9;
   width: 100%;
 }
+@media (max-width: 30em) {
+  .conta__form {
+    padding: 2.5rem;
+  }
+}
 .conta__item {
   position: relative;
   width: calc(50% - 0.8rem);
+}
+@media (max-width: 30em) {
+  .conta__item {
+    width: 100%;
+  }
 }
 .conta__item--email {
   width: 100%;
@@ -2237,6 +2263,37 @@ img {
   line-height: 1;
   padding: 0 0.3rem;
   font-size: 1.33rem;
+}
+
+.pedido {
+  border-radius: 8px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.pedido__cabecalho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.6rem;
+  background-color: #f9f9f9;
+  padding: 2.5rem;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.pedido__corpo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1.6rem;
+  padding: 2.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.pedido__corpo .tabela__imagem {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
