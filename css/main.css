@@ -2173,4 +2173,70 @@ img {
   display: flex;
 }
 
+.conta {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: start;
+  gap: 3.12rem;
+  padding: 9.54rem 3.12rem;
+  background-color: #f0f0f0;
+}
+.conta__container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: start;
+  gap: 2.5rem;
+  padding: 3.9rem;
+  background-color: #fff;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+}
+.conta__form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1.6rem;
+  padding: 3.12rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+.conta__item {
+  position: relative;
+  width: calc(50% - 0.8rem);
+}
+.conta__item--email {
+  width: 100%;
+}
+.conta__item input {
+  padding: 1rem 0.6rem;
+  border: 1px solid #626262;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+}
+.conta__item input::placeholder {
+  font-size: 1.33rem;
+}
+.conta__item input:focus-visible {
+  outline: none;
+}
+.conta__item input[type=number]::-webkit-inner-spin-button, .conta__item input[type=number]::-webkit-outer-spin-button {
+  display: none;
+}
+.conta__item label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, -50%);
+  background-color: #f9f9f9;
+  line-height: 1;
+  padding: 0 0.3rem;
+  font-size: 1.33rem;
+}
+
 /*# sourceMappingURL=main.css.map */
