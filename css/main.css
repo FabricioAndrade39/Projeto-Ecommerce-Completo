@@ -2281,6 +2281,12 @@ img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
+@media (max-width: 30em) {
+  .pedido__cabecalho {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
 .pedido__corpo {
   display: flex;
   flex-flow: row nowrap;
@@ -2290,6 +2296,11 @@ img {
   padding: 2.5rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+@media (max-width: 30em) {
+  .pedido__corpo {
+    padding: 2rem;
+  }
 }
 .pedido__corpo .tabela__imagem {
   border-radius: 4px;

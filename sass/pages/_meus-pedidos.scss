@@ -9,6 +9,11 @@
     padding: 2.5rem;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+
+    @include respond(small) {
+      flex-direction: column;
+      padding: 2rem;
+    }
   }
 
   &__corpo {
@@ -16,6 +21,10 @@
     padding: 2.5rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+
+    @include respond(small) {
+      padding: 2rem;
+    }
 
     & .tabela__imagem {
       border-radius: 4px;
